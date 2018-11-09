@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["l7rAx"]); }
+
+__d("CommentTTLEndLogger",["FeedQuickLogModule","QPLTimeToLoadHelper"],(function(a,b,c,d,e,f){"use strict";function a(a){b("QPLTimeToLoadHelper").annotateInt({qplMarker:b("FeedQuickLogModule").COMMENT_TTL_WWW,annotationKey:"COMMENT_COUNT",annotationValue:a.numComments}),b("QPLTimeToLoadHelper").end({qplMarker:b("FeedQuickLogModule").COMMENT_TTL_WWW,time:a.timestamp})}c={log:a};e.exports=c}),null);
