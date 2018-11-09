@@ -1,8 +1,9 @@
 <?php 
-class Customer extends My_controller{
+class Customers extends My_controller{
 	function __construct(){
 		parent:: __construct();
 		$this->load->Model('Customer_model');
+		$this->load->Model('Customer');
 	}
 	function index()
 

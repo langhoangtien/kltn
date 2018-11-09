@@ -24,7 +24,7 @@
 // Gọi ajax chọn khách hàng
 
   	$.ajax({
-  		url : "<?php echo admin_url('customer/ajax_customer') ?>",
+  		url : "<?php echo admin_url('customers/ajax_customer') ?>",
   		type : "post",
   		dataType:"json",
   		data : {
@@ -45,7 +45,7 @@
   					select: function( event, ui ) {
   						$("#fullname").val( ui.item.fullname );
   						$("#fullname_id").val( ui.item.id );
-  						$("#idcard").val( ui.item.idcard );
+  						$("#card_id").val( ui.item.card_id );
   						$("#phone" ).val( ui.item.phone );
   						$("#address" ).val( ui.item.address );
 
@@ -104,11 +104,11 @@
 			</div>
 
 			<div class="formRow">
-				<label class="formLeft" for="idcard">Số CMND:<span class="req">*</span></label>
+				<label class="formLeft" for="card_id">Số CMND:<span class="req">*</span></label>
 				<div class="formRight">
-				<span class="oneTwo"><input name="idcard" value="<?php echo set_value('interested_id')?>" id="idcard"_autocheck="true" type="text" /></span>
+				<span class="oneTwo"><input name="card_id" value="<?php echo set_value('card_id')?>" id="card_id"_autocheck="true" type="text" /></span>
 				<span name="name_autocheck" class="autocheck"></span>
-				<div name="name_error" class="clear error"> <?php echo form_error('interested_id')?></div>
+				<div name="name_error" class="clear error"> <?php echo form_error('card_id')?></div>
 				</div>
 				<div class="clear"></div>
 			</div>
